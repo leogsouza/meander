@@ -16,6 +16,7 @@ func (j j) Public() interface{} {
 	}
 }
 
+// Journeys contains a list of journeys
 var Journeys = []interface{}{
 	j{Name: "Romantic", PlaceTypes: []string{"park", "bar", "movie_theater", "restaurant", "florist", "taxi_stand"}},
 	j{Name: "Shopping", PlaceTypes: []string{"department_store", "cafe", "clothing_store", "jewelry_store", "shoe_store"}},
