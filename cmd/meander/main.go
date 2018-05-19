@@ -2,12 +2,14 @@ package main
 
 import (
 	"encoding/json"
-	"github.com/leogsouza/meander"
 	"net/http"
+	"os"
+
+	"github.com/leogsouza/meander"
 )
 
 func main() {
-	// meander.APIKey = "TODO"
+	meander.APIKey = os.Getenv("GOOGLE_PLACES_API_KEY")
 	http.HandleFunc("/journeys", func(w http.ResponseWriter, r *http.Request) {
 		respond(w, r, meander.Journeys)
 	})

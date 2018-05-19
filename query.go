@@ -1,5 +1,8 @@
 package meander
 
+// APIKey stores an API key to access Google Places API
+var APIKey string
+
 // Place represents a single place from google Places API
 type Place struct {
 	*googleGeometry `json:"geometry"`
