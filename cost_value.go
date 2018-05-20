@@ -20,6 +20,7 @@ func (r CostRange) String() string {
 	return r.From.String() + "..." + r.To.String()
 }
 
+// ParseCostRange parses the costRange string into CostRange type
 func ParseCostRange(s string) (CostRange, error) {
 	var r CostRange
 	segs := strings.Split(s, "...")
