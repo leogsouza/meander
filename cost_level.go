@@ -1,7 +1,9 @@
 package meander
 
+// Cost represents the costs from a place
 type Cost int8
 
+// Cost Enumerator
 const (
 	_ Cost = iota
 	Cost1
